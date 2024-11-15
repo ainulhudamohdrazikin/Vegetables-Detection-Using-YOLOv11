@@ -5,20 +5,11 @@ import requests
 from PIL import Image
 import os
 import numpy as np
-from yolo_model import YOLO  # Replace with actual import path
-import yolo_model
-from ultralytics import solutions
-
-# os.chdir(r'C:\Users\User\Desktop\LangFlow\chroma db\ResumeHuda')
-# IMAGE_PATH = os.path.join(os.getcwd(), 'static', 'huda_pro.jpg')
-
-# image = Image.open(IMAGE_PATH)
-
-# Constant ambil dari Langflow dkat API-python API-paste
 
 BASE_API_URL = "http://127.0.0.1:7860"
 FLOW_ID = "35e2fffd-90a1-4ac3-acbd-4750ac8eca9e"
 ENDPOINT = "vegetables" # The endpoint name of the flow
+
 
 def run_flow(message: str) -> dict:
     """
@@ -108,51 +99,9 @@ def main():
         st.snow()
     
 
-# def test_model():
-#     st.title('Lets Try our system!')
-
-#         # Pass a model as an argument
-#     solutions.inference(model=r'C:\Users\User\Desktop\AI_ML_TRAINING\YPAI09\Capstone\Capstone5(Final)\runs\detect\train27\weights\best.pt')
-
-#         # Image upload component
-#     uploaded_file = st.sidebar.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
-
-#     if uploaded_file:
-#         # Load the image
-#         image = Image.open(uploaded_file)
-#         st.image(image, caption="Uploaded Image", use_column_width=True)
-#         st.write("Detecting...")
-
-#             # Convert PIL image to a format YOLO can process (e.g., numpy array)
-#         image_np = np.array(image)
-
-#             # Call the YOLO detection function
-            
-#         detected_image, detection_results = yolo_model.detect_objects(image_np)
-
-#             # Display the output
-#         st.image(detected_image, caption="Detection Results", use_column_width=True)
-#         st.write("Detection Details:")
-#         st.write(detection_results)
-
-#     def detect_objects(yolo_model, image):
-#             image_np = np.array(image)  # Convert PIL image to NumPy
-#             results = yolo_model.predict(image_np)  # Replace with YOLOv11 detection method
-#             detected_image = results.render()[0]  # Replace as needed for your YOLOv11
-#             return detected_image, results
-
-#     if uploaded_file is not None:
-#             image = Image.open(uploaded_file)
-#             st.image(image, caption="Uploaded Image", use_column_width=True)
-
-#             # Perform object detection
-#             detected_image, detection_results = detect_objects(yolo_model, image)
-
-#             # Display detected image
-#             st.image(detected_image, caption="Detected Image", use_column_width=True)
-
 if __name__ =='__main__':
     main()
+
 # Footer
 st.markdown("---")
 st.markdown("**Vegetable Detection System** | Developed with YOLOv11 and Streamlit")

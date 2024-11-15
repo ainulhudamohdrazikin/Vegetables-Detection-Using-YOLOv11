@@ -39,19 +39,6 @@ def detect_objects(image, model):
     # Convert the annotated image (NumPy array) to a PIL image for Streamlit display
     return Image.fromarray(annotated_img)
 
-# Function to perform inference on an image
-# def detect_objects(image, model):
-#     # Convert PIL image to RGB format (if it's not already)
-#     img = np.array(image.convert('RGB'))
-    
-#     # Run detection
-#     results = model(img)  # Model expects an image or batch of images
-    
-#     # Render results on the image
-#     img_with_boxes = results.render()[0]  # results.render() returns a list of images, we take the first
-    
-#     # Convert back to PIL Image for Streamlit display
-#     return Image.fromarray(img_with_boxes)
 
 # Streamlit App
 st.write("Upload a picture of vegetables, and our AI model will detect each vegetable in the image.")
