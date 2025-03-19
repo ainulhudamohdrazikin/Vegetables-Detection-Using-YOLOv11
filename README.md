@@ -20,7 +20,7 @@ Training Config: 30 epochs, input image size 240x240 pixels, horizontal flips, a
 Before Model Training
 ![BEFORE](https://github.com/user-attachments/assets/3eb78e47-88ea-4a68-92c9-13bb8127cb35)
 
-Can be seen only one vegetable can be detect.
+The detection does not focus on vegetable, it only can detect object like dining table.
 
 After Model Training
 ![result_latest](https://github.com/user-attachments/assets/5da008ba-d515-4064-893b-58e35fbf6a0d)
