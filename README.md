@@ -1,6 +1,12 @@
-# Vegetables-Detection-Using-YOLOv11
+# Vegetables-Detection-Using-YOLOv11-VEGGIEVISION-
 
 ## **Description:**
+VeggieVision is an AI-powered vegetable detection system designed to identify and classify vegetables in real-time. Built using YOLOv11, this project aims to achieve high accuracy (>0.80 mAP) while maintaining an inference time of <100ms per image on CPU.
+
+📊 Dataset & Training Details
+Dataset Size: 641 images (70% Train, 15% Validation, 15% Test)
+Preprocessing: Images resized to 640x640 pixels, augmented with flips, rotations, and brightness adjustments.
+Training Config: 30 epochs, input image size 240x240 pixels, horizontal flips, and shear augmentation.
 
 ## **Model Architecture:**
 ![model_architecture](https://github.com/user-attachments/assets/95315836-2415-4843-af30-ba633ff3d9fd)
@@ -22,6 +28,16 @@ Webcam
 
 
 ## **Discussion:**
+As from the result can be conclude:-
+✅ Real-Time Detection – Accurately classifies tomatoes, potatoes, cucumbers, cabbages, and cauliflowers.
+✅ Optimized YOLOv11 Model – Trained with 641 annotated images, leveraging data augmentation techniques for robustness.
+✅ High Accuracy – Achieves reliable detection with 30 training epochs and strategic augmentation methods.
+✅ Streamlit App Deployment – User-friendly interface for real-time vegetable identification.
+
+🚀 Future Enhancements
+🔹 Expand detection to include more vegetable types.
+🔹 Optimize model for mobile deployment.
+🔹 Improve detection under varying lighting conditions.
 
 ## **Credit:**
 The source of the datasets are from Kaggle and Google Images.
