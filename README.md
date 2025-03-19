@@ -30,6 +30,7 @@ After the model had been train, now the model can detect all 5 types of vegetabl
 Webcam:  
 ![result_webcam](https://github.com/user-attachments/assets/25a69191-ddb1-40fc-92e1-1e26d3513522)
 
+The model  can functionally detect even live vegetables.
 
 ## **Discussion:**
 As from the result can be conclude:-  
