@@ -17,15 +17,17 @@ Training Config: 30 epochs, input image size 240x240 pixels, horizontal flips, a
 ![tensorboard_mAP](https://github.com/user-attachments/assets/73204b71-5489-4f4f-8959-12ae36693d1e)
 ![result_img](https://github.com/user-attachments/assets/13979ab3-03ac-4a9f-8b38-1d3b245bb1d4)
 
-Before Model Training
+Before Model Training:  
 ![BEFORE](https://github.com/user-attachments/assets/3eb78e47-88ea-4a68-92c9-13bb8127cb35)
 
 The detection does not focus on vegetable, it only can detect object like dining table.
 
-After Model Training
+After Model Training:  
 ![result_latest](https://github.com/user-attachments/assets/5da008ba-d515-4064-893b-58e35fbf6a0d)
 
-Webcam
+After the model had been train, now the model can detect all 5 types of vegetables instead of dining table.
+
+Webcam:  
 ![result_webcam](https://github.com/user-attachments/assets/25a69191-ddb1-40fc-92e1-1e26d3513522)
 
 
